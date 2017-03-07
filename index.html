@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--[if lt IE 9]><script language="javascript" type="text/javascript" src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+<meta charset="UTF-8">
+
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/media.css" rel="stylesheet" type="text/css">
+<link href="css/fontello.css" rel="stylesheet" type="text/css">
+<!--[if IE 7]><link rel="stylesheet" href="css/fontello-ie7.css"><![endif]-->
+<!--[if lte IE 7]>
+<style type="text/css">
+html .jqueryslidemenu{height: 1%;} /*Holly Hack for IE7 and below*/
+</style>
+<![endif]-->
+
+<script src="js/jquery-1.7.1.min.js"></script>
+<script  src="js/jquery.carouFredSel-5.2.2-packed.js"></script>
+<script src="js/script.js"></script>
+<script src="js/jflow.plus.js"></script>
+
+    <script>
+      function toggleCodes(on) {
+        var obj = document.getElementById('icons');
+        
+        if (on) {
+          obj.className += ' codesOn';
+        } else {
+          obj.className = obj.className.replace(' codesOn', '');
+        }
+      }
+      
+    </script>
+    <script>
+$(window).scroll(function(e){
+  parallax();
+});
+function parallax(){
+  var scrolled = $(window).scrollTop();
+  $('#parralax').css('top',-(scrolled*0.1)+'px');
+}
+</script>
+<script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('#myslidemenu ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			
+		});
+	</script>
+    </head>
+
+<body>
+<header class="site-header"><div class="content"><div class="logo"><a href="javascript:void(0);"><img src="img/logo.png" alt="" /></a></div>
+<div class="social"><a href="javascript:void(0);"><i class="icon-twitter"></i></a><a href="javascript:void(0);"><i class="icon-linkedin"></i></a><a href="javascript:void(0);"><i class="icon-facebook"></i></a><a href="javascript:void(0);"><i class="icon-vimeo"></i></a><a href="javascript:void(0);"><i class="icon-youtube"></i></a></div></div></header>
+<nav id="myslidemenu"><ul><li><a href="javascript:void(0);">Home</a></li>
+  <li><a href="javascript:void(0);">Features</a><ul><li><a href="javascript:void(0);">Shortcodes</a></li>
+  <li><a href="javascript:void(0);">Typography</a></li>
+  <li><a href="javascript:void(0);">Layouts</a><ul><li><a href="javascript:void(0);">Shortcodes</a></li>
+  <li><a href="javascript:void(0);">Typography</a></li>
+  <li><a href="javascript:void(0);">Layouts</a></li>
+  <li><a href="javascript:void(0);">Form Builder</a></li>
+  </ul></li>
+  <li><a href="javascript:void(0);">Form Builder</a></li>
+  </ul></li>
+  <li><a href="javascript:void(0);">Portfolio</a></li>
+  <li><a href="javascript:void(0);">Blog</a></li>
+  <li><a href="javascript:void(0);">Contacts</a></li>
+</ul>
+<a href="#" id="pull">Menu</a></nav>
+<div class="content"><div id="slide">
+<div id="container">
+<div id="mySlides">
+    <div id="slide1">    
+        <img src="img/slide1.png" alt="" />
+       <div class="text"><h1><strong>Clean</strong>design</h1><hr/><p>Lorem ipsum dolor sit amet, <br>
+consectetur adipisicing elit. Nam, sed.</p></div>
+	</div>    	
+    <div id="slide2">
+       <img src="img/slide2.png" alt="" />
+					<div class="text slide2"><h1><strong>Clean</strong>design</h1><hr/><p>Lorem ipsum dolor sit amet, <br>
+consectetur adipisicing elit. Nam, sed.</p></div>
+    </div>   
+</div>
+
+<div id="myController">
+   <span class="jFlowControl">1</span>
+   <span class="jFlowControl">2</span>
+</div>
+
+<span class="jFlowPrev"><i class="icon-left-open-1"></i></span>
+<span class="jFlowNext"><i class="icon-right-open"></i></span>
+</div>
+<div class="slide_shadow"></div>
+</div></div>
+<div class="content"><div class="row"><div class="one-three review"><i class="icon-mobile"></i><h2>Responsive Design</h2><p>Lorem ipsum dolor sit amet cons ectetuer adipiscing elit praesent vestibulu moles lacus aenean ummy hendrerit mahas. Praesent posuere tortor sed mi ullamcorper sodales. Cras porta purus in </p></div><div class="one-three review bg_review"><i class="icon-cog"></i><h2>Easy to Customize</h2><p>Lorem ipsum dolor sit amet cons ectetuer adipiscing elit praesent vestibulu moles lacus aenean ummy hendrerit mahas. Praesent posuere tortor sed mi ullamcorper sodales. Cras porta purus in </p></div><div class="one-three review"><i class="icon-diamond"></i><h2>Visual Page Builder</h2><p>Lorem ipsum dolor sit amet cons ectetuer adipiscing elit praesent vestibulu moles lacus aenean ummy hendrerit mahas. Praesent posuere tortor sed mi ullamcorper sodales. Cras porta purus in </p></div></div></div><div style="position: inherit"><div id="parralax"></div>
+<div class="content">
+<div id="latest"><h1 class="latest">Latest Works</h1><div class="row"><div class="one-four"><div class="view"><img src="img/img1.png" alt=""><div class="mask"><div class="icon_img"><i class="icon-link"></i></div>
+                        <div class="text"><i class="icon-file-image"></i><h3>Lifestyle</h3>
+                        <p>Design, Corporate</p></div>
+                    </div></div></div><div class="one-four"><div class="view"><img src="img/img2.png" alt=""><div class="mask"><div class="icon_img"><i class="icon-link"></i></div>
+                        <div class="text"><i class="icon-doc-text"></i><h3>Lifestyle</h3>
+                        <p>Design, Corporate</p></div>
+                    </div></div></div><div class="one-four"><div class="view"><img src="img/img3.png" alt=""><div class="mask"><div class="icon_img"><i class="icon-link"></i></div>
+                        <div class="text"><i class="icon-note"></i><h3>Innovation</h3>
+                        <p>Business, Success</p></div>
+                    </div></div></div><div class="one-four"><div class="view"><img src="img/img4.png" alt=""><div class="mask"><div class="icon_img"><i class="icon-link"></i></div>
+                        <div class="text"><i class="icon-play"></i><h3>Education</h3>
+                        <p>Business, Corporate</p></div>
+                    </div></div></div></div></div></div><div id="intro">
+                     <img src="img/leaf.png" alt=""><h1>Create unlimited number <br>
+of <strong>Parallax</strong> backgrounds!</h1></div><div class="content"><div class="row"><div class="box_services"><h2>Our Services</h2><a href="javascript:void(0);" class="active">Responsive layout</a><a href="javascript:void(0);">Best support</a><a href="javascript:void(0);">Friendly interface</a><a href="javascript:void(0);">Quality service</a><a href="javascript:void(0);">Cool solution</a></div>
+<div class="box_about"><h2>About US</h2><h3>Unlimited possibilities</h3><p>Aliquam convallis erat a enim dictum et vestibulum nibh rutrum. In mi nisi, hendrerit in pellentesque pellentesque, blandit a ipsum. Nam aliquet commodo nulla nec lobortis. Curabitur aliquet, urna a tempus iaculis, lorem augue tristique augue, sed aliquet sapien ligula nec lorem. Morbi posuere, augue adipiscing cursus ullamcorper, turpis urna volutpat urna, a pulvinar massa sem sit amet diam. Etiam at ante erat, id aliquam nisi. Integer vitae nibh tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p></div><div class="box_testimonials"><h2>Testimonials</h2><blockquote><p>Lorem ipsum dolor sit amet ,cons tetuer adipiscing elit raesent vestibu moles lacus aenean umy hendrerit ahas. Praesent posuere tortor sed. ullamcorper sodales. <br>
+Cras porta purus in augue molestie aliquet. Aenean </p></blockquote><div class="author_box"><i class="author"></i>John Parker<div class="info">Businessman, Colorado</div></div></div></div></div></div>
+<footer class="site-footer"><div class="content"><div class="row"><div class="footer_box"><h2>Popular Works</h2><div class="work_box">
+			<ul id="foo3">
+				<li><img src="img/w_img.png" alt=""><h2>Lorem ipsum</h2><p>Lorem ipsum dolor sit amet cons ectetuer adipiscing elit praesent vestibu moles... </p></li>
+				<li><img src="img/w_img.png" alt=""><h2>Lorem ipsum</h2><p>Lorem ipsum Lorem ipsum  Lorem ipsum  Lorem ipsum ... </p></li>
+			</ul>
+            <div class="carou"><a id="prev3" class="prev" href="#"><i class="icon-left-open-1"></i></a><a id="next3" class="next" href="#"><i class="icon-right-open"></i></a></div>
+
+	</div>
+</div><div class="footer_box"><h2>Latest Twitts</h2><div id="twitt"><div class="tooltip">Lorem ipsum dolor sit amet cons tetuer adipiscing elit praesent vestibu moles </div><div class="date">2 days ago</div></div><div id="twitt"><div class="tooltip">Lorem ipsum dolor sit amet cons tetuer adipiscing elit praesent vestibu moles </div><div class="date">2 days ago</div></div></div><div class="footer_box"><h2>List Widget</h2><ul class="list"><li>Careers</li>
+<li>Company news</li>
+<li>Investor relations</li>
+<li>Site map</li>
+<li>Facebook</li>
+<li>Flickr</li>
+<li>Twitter</li>
+<li>Vimeo</li></ul></div><div class="footer_box"><h2>Quick Contacts</h2><form action="" method="get"><div class="row"><label>Name<input type="text" class="form" placeholder="Name" /></label></div><div class="row"><label>Your Email<textarea type="text" class="form"  placeholder="Your Email"></textarea></label></div><div class="row"><button>Submit</button></div></form></div></div><hr/><div class="row"><div class="menu"><ul><li><a href="javascript:void(0);">Home</a></li>
+  <li><a href="javascript:void(0);">Features</a></li>
+  <li><a href="javascript:void(0);">Portfolio</a></li>
+  <li><a href="javascript:void(0);">Blog</a></li>
+  <li><a href="javascript:void(0);">Contacts</a></li>
+</ul>
+</div><div class="copy">&copy; 2014 All rights reserved</div></div></div>
+</footer>
+<script>
+	$(document).ready(function(){
+	    $("#myController").jFlow({
+			controller: ".jFlowControl", // must be class, use . sign
+			slideWrapper : "#jFlowSlider", // must be id, use # sign
+			slides: "#mySlides",  // the div where all your sliding divs are nested in
+			selectedWrapper: "jFlowSelected",  // just pure text, no sign
+			width: "auto",  // this is the width for the content-slider
+			//height: "450",  // this is the height for the content-slider
+			duration: 400,  // time in miliseconds to transition one slide
+			prev: ".jFlowPrev", // must be class, use . sign
+			next: ".jFlowNext", // must be class, use . sign
+			auto: true	
+    });
+});	
+
+			$(function() {
+			
+				$('#foo3').carouFredSel({
+					height: 'auto',
+					prev: '#prev3',
+					next: '#next3',
+					auto: false
+				});
+
+			});
+
+</script>
+</body>
+</html>

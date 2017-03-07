@@ -1,0 +1,46 @@
+@media (min-width: 100px) and (max-width: 640px) {
+.site-footer .copy, .site-footer .menu, .site-footer .copy, .site-footer .menu ul, .site-header .logo, .site-header .social { float:none; clear:both; text-align:center}
+.site-footer .menu ul li  { float:none; margin:0px 0px 15px 0}
+.footer_box { float:none; width:100%; margin:0 0 20px 0;}
+.site-header .logo { margin-bottom:15px;}
+.one-three, .one-four, .box_services, .box_about, .box_testimonials { float:none; width:100%; margin:0 0 20px 0;}
+ .one-four, .one-four:last-child { max-width:260px; margin:0px auto 20px auto}
+.one-three { padding:30px 0px;}
+.buy_theme .reclame { float:none; width:93.1%; margin-bottom:20px;}
+button.buy { float:none; width:auto; padding:20px 30px;}
+aside.buy_theme { background:none}
+.buy_theme [class^="icon-"]:before, [class*=" icon-"]:before { margin:0 0 0 30px;}
+
+
+
+}
+@media (min-width: 100px) and (max-width: 360px) {
+.right { float:none; display:block}
+}
+@media (min-width: 100px) and (max-width: 480px) {
+.movie_cover { width:40%;}
+
+}
+
+@media (min-width: 100px) and (max-width: 585px) {
+#myslidemenu ul  {display: none; height: auto;	}
+#myslidemenu ul li, #myslidemenu ul li ul l { float:none; display:block}
+#myslidemenu ul li a {border-right:none; border-bottom: 1px solid #4b5961;}
+#myslidemenu a#pull {display: block; background-color: #3a454b; width: 95%;	position: relative; color:#fff; text-transform:uppercase;  padding: 20px 0 20px  5%;	}
+#myslidemenu a#pull:after {	content:""; background: url(../img/nav-icon.png) no-repeat; width: 30px; height: 30px; display: inline-block; position: absolute; right: 15px; top: 22px; }
+#myslidemenu ul li ul, #myslidemenu ul li ul li ul { display:block!important; position: inherit;  visibility: inherit;}
+#myslidemenu ul li ul li a, 
+#myslidemenu ul li ul li:first-child a, #myslidemenu ul li ul li:last-child a { color: #ffffff;  display: block;  padding: 20px 35px;  text-decoration: none; background:none; width:auto}
+#myslidemenu ul li ul li ul li a, #myslidemenu ul li ul li ul li:first-child a, #myslidemenu ul li ul li ul li:last-child a{padding: 20px 50px;}
+#myslidemenu ul li ul li ul li a:hover, #myslidemenu ul li ul li a:hover {background:#6cc437; text-decoration:none; color:#FFF} 
+}
+
+
+@media (min-width: 641px) and (max-width: 767px) {
+
+}
+
+
+@media (min-width: 768px) {
+
+}
